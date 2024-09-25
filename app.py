@@ -4,14 +4,14 @@ import helper
 import settings
 
 st.set_page_config(
-    page_title="Waste Detection",
+    page_title="E-Waste Detection",
 )
 
 st.sidebar.title("Detect Console")
 
 model_path = Path(settings.DETECTION_MODEL)
 
-st.title("Intelligent waste segregation system")
+st.title("Intelligent E-waste segregation system")
 st.write("Start detecting objects in the webcam stream by clicking the button below. To stop the detection, click stop button in the top right corner of the webcam stream.")
 st.markdown(
 """
@@ -53,5 +53,5 @@ except Exception as ex:
     st.error(ex)
 helper.play_webcam(model)
 
-st.sidebar.markdown("This is a demo of the waste detection model.", unsafe_allow_html=True)
+st.sidebar.markdown("This is a demo of the E- waste detection model.", unsafe_allow_html=True)
 
